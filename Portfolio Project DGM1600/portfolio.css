@@ -76,6 +76,16 @@ figcaption {
   text-align: center;
   
 }
+.starWars{
+    margin-right: 400px;
+    margin-left: 400px;
+}
+figure {
+    border: 2px solid black;
+}
+#openingCrawl{
+    border: 2px solid black;
+}
 .link-logo {
   height: 100px;
 }
