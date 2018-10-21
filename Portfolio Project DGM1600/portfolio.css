@@ -74,7 +74,10 @@ figcaption {
   padding: 20px;
   position: relative;
   text-align: center;
-  
+}
+#film-list li{
+    list-style-type: none;
+    padding-top: 10px;
 }
 .starWars{
     margin-right: 400px;
