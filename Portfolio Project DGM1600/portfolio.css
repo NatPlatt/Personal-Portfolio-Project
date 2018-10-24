@@ -84,7 +84,7 @@ figcaption {
     margin-right: 400px;
     margin-left: 400px;
 }
-figure {
+figure.theForce {
     border: 2px solid black;
 }
 figcaption {
@@ -95,15 +95,26 @@ figcaption {
 }
 #film-list {
     padding-bottom: 10px;
+    
+}
+#film-list li {
+    border: solid grey 2px;
+    border-radius: 1rem;
+    margin: 10px 600px 10px 600px;
+}
+#film-list li:hover {
+    background:#80deea;
 }
 .link-logo {
   height: 100px;
 }
 legend {
     font-family: Courier New;
+    text-align: center;
 }
 fieldset {
     margin-top: 10px;
+    text-align: center;
 }
 #profile-link {
   display: center;
