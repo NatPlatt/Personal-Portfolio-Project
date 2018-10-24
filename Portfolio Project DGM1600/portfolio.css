@@ -78,6 +78,7 @@ figcaption {
 #film-list li{
     list-style-type: none;
     padding-top: 10px;
+    font-family: Courier New;
 }
 .starWars{
     margin-right: 400px;
@@ -86,12 +87,23 @@ figcaption {
 figure {
     border: 2px solid black;
 }
+figcaption {
+    font-family: Courier New;
+}
 #openingCrawl{
     border: 2px solid black;
+}
+#film-list {
+    padding-bottom: 10px;
 }
 .link-logo {
   height: 100px;
 }
+legend {
+    font-family: Courier New;
+}
+fieldset {
+    margin-top: 10px;
 }
 #profile-link {
   display: center;
