@@ -75,3 +75,6 @@ let para = document.createElement("p")
 para.textContent = films[6].opening_crawl
 crawl.appendChild(para)
 console.log(films[6].opening_crawl);
+
+
+

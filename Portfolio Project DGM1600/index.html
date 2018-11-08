@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
     <link rel="stylesheet" href="portfolio.css">
+    <meta charset="UTF-8">
+    
 <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
  
@@ -20,6 +22,10 @@ For now, the test suite only works in Chrome! Please read the README below in th
       <a href="#projects">Projects</a></li>
     <li>
       <a href="#contact">Contact</a></li>
+    <li>
+      <a href="cards.html">Cards</a></li>
+    <li class='active'>
+      <a href="index.html">Main</a></li>
   </ul>
 </nav>
 <section id="welcome-section">
@@ -32,16 +38,16 @@ For now, the test suite only works in Chrome! Please read the README below in th
   <p>And other fun web development things</p>
   <div class="project-tile">
   
-    <figure>
-      <a id="profile-link" href="https://github.com/NatPlatt" target="_blank"><img class="link-logo" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="GitHub"/><figcaption>GitHub</figcaption>
+    <figure class='proj'>
+      <a id="profile-link" href="https://github.com/NatPlatt" target="_blank"><img class="link-logo" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="GitHub"/><figcaption class="sites">GitHub</figcaption>
       </a>
     </figure>
-      <figure>
-      <a href="http://www.catipsum.com/index.php#.W53RyehKiHs" target="_blank"><img class="link-logo" src="http://www.catipsum.com/imgs/global/logo_catface.svg" alt="Cat Ipsum Generator"/><figcaption>Cat Ipsum Generator</figcaption>
+      <figure class='proj'>
+      <a href="http://www.catipsum.com/index.php#.W53RyehKiHs" target="_blank"><img class="link-logo" src="http://www.catipsum.com/imgs/global/logo_catface.svg" alt="Cat Ipsum Generator"/><figcaption class="sites">Cat Ipsum Generator</figcaption>
       </a>
     </figure>
-    <figure>
-      <a href="https://codepen.io/natplatt/pen/eLMRQO?editors=1100" target="_blank"><img class="link-logo" src="http://nathanschmidtdesign.com/images/small/codepen-logo.svg" alt="Code Pen Logo"/><figcaption>My CodePen Project</figcaption>
+    <figure class='proj'>
+      <a href="https://codepen.io/natplatt/pen/eLMRQO?editors=1100" target="_blank"><img class="link-logo" src="http://nathanschmidtdesign.com/images/small/codepen-logo.svg" alt="Code Pen Logo"/><figcaption class="sites">My CodePen Project</figcaption>
       </a>
     </figure>
   </div>
@@ -50,7 +56,7 @@ For now, the test suite only works in Chrome! Please read the README below in th
 <section id="API">
     <figure class="theForce">
         <img class="starWars" src="the%20force%20awakens.png" alt="The Force Awakens, Rey and BB8">
-        <figcaption>Star Wars API<p id="openingCrawl"></p>
+        <figcaption class="SW">Star Wars API<p id="openingCrawl"></p>
             <fieldset>
                 <legend>Star Wars Films</legend>
                 <a href="https://www.starwars.com/films" target="_blank"><ul id="film-list"></ul></a>

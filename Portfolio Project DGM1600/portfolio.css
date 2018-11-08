@@ -2,6 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
+.active{
+    background-color: darkgray; 
+}
 #navbar {
   margin: 25px;
 }
@@ -17,6 +20,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
+    padding: 25px;
 }
 nav ul li a {
   color: white;
@@ -67,7 +71,7 @@ p {
   justify-content: space-around;
 }
 
-figcaption {
+.sites {
   display: block;
   caption-side: bottom;
   justify-content: space-around;
@@ -87,8 +91,9 @@ figcaption {
 figure.theForce {
     border: 2px solid black;
 }
-figcaption {
+.SW {
     font-family: Courier New;
+    text-align: center;
 }
 #openingCrawl{
     border: 2px solid black;
@@ -159,4 +164,67 @@ nav ul li{
 .project-tile{
     margin: 40px 0;
   }
+}
+/*Pokemon Cards page*/
+#cardTitle {
+    padding-top: 50vh;
+}
+h3{
+    padding-top: 200px;
+    padding-left: 25px;
+    color: black;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+figure {
+    border: solid 2px black;
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #666;
+}
+figcaption {
+    text-align: center;
+    border: solid 2px black;
+    padding: 5px;
+    border-radius: 1rem;
+}
+.scene {
+    width: 200px;
+    height: 260px;
+    border: 1px solid #666;
+    margin: 40px 0;
+    perspective: 600px;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+.card_face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+}
+.card_face--front{
+    background: white;
+}
+.card_face--back{
+    background: #80deea;
+    transform: rotateY(180deg);
 }
