@@ -1,3 +1,6 @@
+/*import {hpapi} from "./harrypotter.js"
+console.log(hpapi);*/
+
 import {pokemon} from "./poke26.js"
 console.log(pokemon);
 
@@ -7,14 +10,14 @@ pokemon.forEach(poke =>{
     let fig = document.createElement('figure')
     let img = document.createElement('img')
     let cap = document.createElement('figcaption')
-    let backDiv = document.createElement('div')
-    backDiv.textContent = poke.jname
+    let backFig = document.createElement('fig')
+    backFig.textContent = poke.jname
     cap.textContent = poke.ename
-    img.src = "/img26/${poke.id}${poke.ename}.png"
+    img.src = `/img26/${poke.id}${poke.ename}.png`
     fig.appendChild(img)
     fig.appendChild(cap)
     card.appendChild(fig)
-    card.appendChild(backDiv)
+    card.appendChild(backFig)
     pokeContainer.appendChild(card)
     card.addEventListener('click',function(){
         card.classList.toggle('is-flipped');
