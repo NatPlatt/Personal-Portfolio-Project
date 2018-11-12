@@ -10,7 +10,7 @@ pokemon.forEach(poke =>{
     let fig = document.createElement('figure')
     let img = document.createElement('img')
     let cap = document.createElement('figcaption')
-    let backFig = document.createElement('fig')
+    let backFig = document.createElement('figure')
     backFig.textContent = poke.jname
     cap.textContent = poke.ename
     img.src = `/img26/${poke.id}${poke.ename}.png`
@@ -19,11 +19,9 @@ pokemon.forEach(poke =>{
     card.appendChild(fig)
     card.appendChild(backFig)
     pokeContainer.appendChild(card)
-    card.addEventListener('click',function(){
-        card.classList.toggle('is-flipped');
-    });
+
 });
-/*var card = document.querySelector('.card');
-card.addEventListener('mouseover',function(){
+var card = document.querySelector('.card');
+card.addEventListener('click',function(){
     card.classList.toggle('is-flipped');
-});*/
+});
