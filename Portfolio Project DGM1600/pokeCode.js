@@ -29,9 +29,9 @@ const cardCreator = (poke) => {
     backFig.className = 'card_face card_face--back'
     let capt = document.createElement('figcaption')
     capt.className = 'backFigCap'
-    let imag = document.createElement('img')
+    /*let imag = document.createElement('img')
     capt.textContent = poke.jname
-    imag.src = './pokecardback.png'
+    imag.src = './pokecardback.png'*/
     
     let attack = document.createElement('p')
     attack.textContent = `Attack: ${poke.base.Attack}`
@@ -54,7 +54,7 @@ const cardCreator = (poke) => {
     console.log(`Special Defense:${poke.base["Sp.Def"]}`)
     
     backFig.appendChild(capt)
-    backFig.appendChild(imag)
+    //backFig.appendChild(imag)
     backFig.appendChild(attack)
     backFig.appendChild(defense)
     backFig.appendChild(hp)
