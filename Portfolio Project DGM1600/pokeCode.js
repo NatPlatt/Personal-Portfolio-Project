@@ -82,7 +82,8 @@ let newCard = {
         "id": "027", 
         "jname": "\u30b5\u30f3\u30c9", 
 }
-let createCard = document.querySelector('#createCard') createCard.addEventListener('click', function(){
+let createCard = document.querySelector('#createCard') 
+createCard.addEventListener('click', function(){
     cardCreator(newCard)
 })
 /*var card = document.querySelector('.card');
