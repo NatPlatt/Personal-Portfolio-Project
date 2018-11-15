@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <html>
+    <head>
     <link rel="stylesheet" href="portfolio.css">
     <script type='module' src='pokeCode.js'></script>
+    </head>
     <nav>
         <ul id="navbar">
             <li>
@@ -18,20 +20,109 @@
                 <a href= "harryPotter.html">Harry Potter Cards</a></li>
         </ul>
     </nav>
+    
     <body>
     <section id="cardTitle">
         <h3>Pokemon Cards</h3>
     </section>
     <div id="container">
-        <div class="scene scene--card">
-            <div class="card">
-                <div class="card_face card_face--front">Front
-                </div>
-                <div class="card_face card_face--back">Back
-                </div>
-            </div>
-        </div>
+      <span>
+        <p>one paragraph</p>
+          <p>another paragraph</p>
+          <p>yet another paragraph</p>
+        </span>
     </div>
-        
+        <button id="createCard" type="button">Click for New Card</button>
     </body>   
 </html>
+<style>
+head {
+    display: flex;
+    position: fixed;
+    }
+section#cardTitle{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#container{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    }
+.scene {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #666;
+    margin: 40px 0;
+    perspective: 600px;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    
+}
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+.card_face{
+    /*position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+    color: black;
+    text-align: center;*/
+    font-weight: bold;
+    font-size: 30px;
+    backface-visibility: hidden;
+}
+figure {
+    border: solid 2px black;
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #666;
+}
+figcaption {
+    text-align: center;
+    border: solid 2px black;
+    padding: 5px;
+    border-radius: 1rem;
+}
+.backFig {
+    width:inherit;
+    height:inherit;
+}
+.backFigCap {
+    position: absolute;
+    width: 100%;
+    border: none;
+    padding-left: 110px;
+    padding-top: 15px;
+    text-align: left;
+    }
+p {
+    position: absolute;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    display: flex;
+    }
+.card_face--front{
+    background: white;
+}
+.card_face--back{
+    transform: rotateY(180deg);
+    background: white;
+}
+#createCard{
+    padding: 10px;
+    }
+</style>

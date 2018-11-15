@@ -35,7 +35,7 @@ For now, the test suite only works in Chrome! Please read the README below in th
   <p>Web Development Portfolio</p>
 </section>
 <section id="projects">
-  <div>
+  <div class="myproj">
   <h1>Here are my projects</h1>
   <p>And other fun web development things</p>
   <div class="project-tile">
@@ -80,3 +80,136 @@ For now, the test suite only works in Chrome! Please read the README below in th
   </footer>
 <script type="module" src="portfolio.js"></script>
 </html>
+
+<style>
+
+section h1 {
+  color: white;
+  font-size: 40px;
+}
+section .myproj h1 {
+  color: black;
+  font-size: 30px;
+}
+h1 {
+  font-family: Courier New;
+  font-size: 25px;
+  text-align: center;
+}
+p {
+  font-family: Courier New;
+  text-align: center;
+  padding: 30px;
+}
+#projects {
+  text-align: center;
+  min-height: 55vh;
+  padding-bottom: 45vh;
+  padding-top: 60px;
+  flex-direction: row;
+}
+.project-tile {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  border: 2px solid;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  justify-content: space-around;
+}
+
+.sites {
+  display: block;
+  caption-side: bottom;
+  justify-content: space-around;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+#film-list li{
+    list-style-type: none;
+    padding-top: 10px;
+    font-family: Courier New;
+}
+.starWars{
+    margin-right: 400px;
+    margin-left: 400px;
+}
+figure.theForce {
+    border: 2px solid black;
+}
+.SW {
+    font-family: Courier New;
+    text-align: center;
+}
+#openingCrawl{
+    border: 2px solid black;
+}
+#film-list {
+    padding-bottom: 10px;
+    
+}
+#film-list li {
+    border: solid grey 2px;
+    border-radius: 1rem;
+    margin: 10px 600px 10px 600px;
+}
+#film-list li:hover {
+    background:#80deea;
+}
+.link-logo {
+  height: 100px;
+}
+legend {
+    font-family: Courier New;
+    text-align: center;
+}
+fieldset {
+    margin-top: 10px;
+    text-align: center;
+}
+#profile-link {
+  display: center;
+  padding: 50px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+#contact {
+  padding: 50px;
+}
+.contact-list {
+  color: black;
+  padding: 60px;
+  padding-top:40px;
+  border: 2px solid;
+  border-radius: 50px;
+  width: 100px;
+  background: #80deea;
+  font-size: 18px;
+}
+.contact-list:hover {
+  background: white;
+}
+div ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+div ul li {
+  display: inline-block;
+}
+footer {
+  background-color: #00838f;
+}
+.project-tile{
+    margin: 40px 0;
+}
+/*@media only screen and (max-width: 500px){nav ul{text-align: center;
+  }
+nav ul li{
+    margin: 20px;
+  }*/
+
+</style>

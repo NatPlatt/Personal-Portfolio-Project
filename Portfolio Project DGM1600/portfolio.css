@@ -2,45 +2,49 @@
   margin: 0px;
   padding: 0px;
 }
+html{
+    display:block;
+}
 .active{
     background-color: darkgray; 
 }
-#navbar {
-  margin: 25px;
-}
 nav {
-  background-color: #00838f;
-  position: fixed;
-  width: 100%;
+    background-color: #00838f;
+    position: fixed;
+    width: 100%;
 }
+#navbar {
+    /*margin: 25px;*/
+}
+
 nav ul {
-  text-align: right;
-  display: flex;
-  justify-content: space-around;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
 }
 nav ul li {
-  display: inline-block;
+    display: inline-block;
     padding: 25px;
 }
 nav ul li a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 a:hover{
-  cursor: pointer;
+    cursor: pointer;
 }
 #welcome-section {
-  height: 100vh;
-  background: #80deea;
-  padding-top: 55vh;
-  text-align: center;
-  width: 100vw;
+    height: 100vh;
+    background: #80deea;
+    padding-top: 55vh;
+    text-align: center;
+    width: 100vw;
 }
-section h1 {
+/*section h1 {
   color: white;
   font-size: 40px;
 }
-section div h1 {
+section .myproj h1 {
   color: black;
   font-size: 30px;
 }
@@ -158,15 +162,14 @@ footer {
 }
 /*@media only screen and (max-width: 500px){nav ul{text-align: center;
   }*/
-nav ul li{
+/*nav ul li{
     margin: 20px;
   }
 .project-tile{
     margin: 40px 0;
   }
-}
 /*Pokemon Cards page*/
-#cardTitle {
+/*#cardTitle {
     padding-top: 50vh;
 }
 h3 {
@@ -177,6 +180,7 @@ h3 {
 #container {
     display: flex;
     flex-wrap: wrap;
+    
 }
 figure {
     border: solid 2px black;
@@ -192,40 +196,55 @@ figcaption {
     padding: 5px;
     border-radius: 1rem;
 }
+.backFig {
+    width:inherit;
+    height:inherit;
+}
+.backFigCap {
+    position: absolute;
+    width: 100%;
+    border: none;
+    padding-left: 110px;
+    padding-top: 15px;
+    text-align: left;
+}
 /*CodePen Animation CSS*/
-.scene {
+/*.scene {
     width: 200px;
-    height: 260px;
+    height: 150px;
     border: 1px solid #666;
     margin: 40px 0;
     perspective: 600px;
 }
 .card {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    
 }
 .card.is-flipped {
     transform: rotateY(180deg);
 }
 .card_face{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    line-height: 260px;
+    /*width: 100%;
+    height: 100%;*/
+    /*line-height: 20px;
     color: black;
-    text-align: center;
+    /*text-align: center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     backface-visibility: hidden;
 }
 .card_face--front{
     background: white;
 }
 .card_face--back{
-    background: #80deea;
     transform: rotateY(180deg);
-}
+    background: white;
+}*/
