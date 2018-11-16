@@ -6,6 +6,8 @@ console.log(pokemon);
 
 const pokeContainer = document.querySelector('#container')
 
+
+
 const cardCreator = (poke) => {
     let card = document.createElement('div')
     card.className = 'card'
@@ -59,6 +61,7 @@ const cardCreator = (poke) => {
     backFig.appendChild(hp)
     backFig.appendChild(spAtk)
     backFig.appendChild(spDef)
+    
     
     card.appendChild(frontFig)
     card.appendChild(backFig)
