@@ -70,24 +70,40 @@ const cardCreator = (poke) => {
 
 pokemon.forEach(element => cardCreator(element))
 
-let newCard = {
-    "base": {
-            "Attack": 75, 
-            "Defense": 85, 
-            "HP": 50, 
-            "Sp.Atk": 20, 
-            "Sp.Def": 30, 
-            "Speed": 40
-        }, 
-        "cname": "\u7a7f\u5c71\u9f20", 
-        "ename": "Sandshrew", 
-        "id": "027", 
-        "jname": "\u30b5\u30f3\u30c9", 
-}
+//let newCard = {
+//    "base": {
+//            "Attack": 75, 
+//            "Defense": 85, 
+//            "HP": 50, 
+//            "Sp.Atk": 20, 
+//            "Sp.Def": 30, 
+//            "Speed": 40
+//        }, 
+//        "cname": "\u7a7f\u5c71\u9f20", 
+//        "ename": "Sandshrew", 
+//        "id": "027", 
+//        "jname": "\u30b5\u30f3\u30c9", 
+//}
+class Pokemon {
+   constructor(ename, jname, id, base) {
+    this.ename = ename;
+    this.jname = jname;
+    this.id = id;
+    this.base = base;
+   } 
+};
+
+let newPokemon = new Pokemon("Sandshrew", "\u30b5\u30f3\u30c9",'027', {"Attack": 75, "Defense": 85,"HP": 50,"Sp.Atk":20,"Sp.Def":30});
+
+let newPokemon2 = new Pokemon("Rapidash","\u30ae\u30e3\u30ed\u30c3\u30d7", '078',{"Attack": 100, "Defense":70, "HP":65, "Sp.Atk":80, "Sp.Def":80});
+
 let createCard = document.querySelector('#createCard') 
 createCard.addEventListener('click', function(){
-    cardCreator(newCard)
-})
+    cardCreator(newPokemon)
+});
+createCard.addEventListener('click', function(){
+    cardCreator(newPokemon2)
+});
 /*var card = document.querySelector('.card');
 card.addEventListener('click',function(){
     card.classList.toggle('is-flipped');
