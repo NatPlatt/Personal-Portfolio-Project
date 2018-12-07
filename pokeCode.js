@@ -1,12 +1,8 @@
-/*import {hpapi} from "./harrypotter.js"
-console.log(hpapi);*/
 
 import {pokemon} from "./poke26.js"
 console.log(pokemon);
 
 const pokeContainer = document.querySelector('#container')
-
-
 
 const cardCreator = (poke) => {
     let card = document.createElement('div')
@@ -70,20 +66,6 @@ const cardCreator = (poke) => {
 
 pokemon.forEach(element => cardCreator(element))
 
-//let newCard = {
-//    "base": {
-//            "Attack": 75, 
-//            "Defense": 85, 
-//            "HP": 50, 
-//            "Sp.Atk": 20, 
-//            "Sp.Def": 30, 
-//            "Speed": 40
-//        }, 
-//        "cname": "\u7a7f\u5c71\u9f20", 
-//        "ename": "Sandshrew", 
-//        "id": "027", 
-//        "jname": "\u30b5\u30f3\u30c9", 
-//}
 class Pokemon {
    constructor(ename, jname, id, base) {
     this.ename = ename;
@@ -104,7 +86,3 @@ createCard.addEventListener('click', function(){
 createCard.addEventListener('click', function(){
     cardCreator(newPokemon2)
 });
-/*var card = document.querySelector('.card');
-card.addEventListener('click',function(){
-    card.classList.toggle('is-flipped');
-});*/
