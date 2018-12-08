@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <link rel="stylesheet" href="portfolio.css">
     <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Almendra+SC|EB+Garamond|IM+Fell+English+SC|Metamorphous|Noto+Serif+KR" rel="stylesheet">
 <html>
 <nav>
   <ul id="navbar">
@@ -19,7 +20,16 @@
   </ul>
 </nav>
     <h3>--Harry Potter Cards - coming soon--</h3>
-    <h4>In the meantime, enjoy some wizard photos!</h4>
+    <h4>Write muggle, wizard or witch in the input field and click the button.</h4>
+    <div class="muggleFunc">
+        <label>
+            <input id="myInput" type="text">
+            <button onClick="muggleOrNot()">Try it</button>
+        </label>
+    </div>
+    <div>
+        <p id="demo"></p>
+    </div>
     <div class="gifs">
         <figure class="pumpkin"><img src="halloween-at-hogwarts.gif" alt="Halloween at Hogwarts"></figure>
         <figure><img src="harrypottergif.gif" alt="Harry Potter with snitch"></figure>
@@ -32,11 +42,12 @@
         <figure><img src="thestral.gif" alt="Thestral"></figure>
         <figure><img src="hogwarts_express2.gif" alt="Hogwarts Express"></figure>
         <figure><img src="lumos.gif" alt="Lumos"></figure>
-        <figure><img src="ghost.gif" alt="The Fat Friar ghost"></figure>
         <figure><img src="crookshanks.gif" alt="Crookshanks"></figure>
+        <figure><img src="ghost.gif" alt="The Fat Friar ghost"></figure>
+        
         <figure><img src="hagrids%20hut.gif" alt="Hagrids Hut"></figure> 
     </div>
-    
+<!--<script type="module" src="HPcode.js"></script>-->
 </html>
 
 
@@ -52,18 +63,48 @@
         font-family: Courier New;
         text-align: center;
     }
-    div {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding-left: 40px;
-        padding-right: 30px;
+    div.muggleFunc {
+        position:relative;
+        left: 45%; 
+        margin: 10px;
+    }
+    p#demo {
+        font-family: 'Metamorphous', cursive;
+        text-align: center;
+        padding-left: 25px;
+    }
+    div.gifs {
+        margin: 20px;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        float: left;
     }
     figure {
-        display: inline-block;
         margin: 5px;
         margin-right: 5px;
+        
     }
     /*figure.pumpkin {
         margin-left: 38px;
     }*/
 </style>
+
+<script>
+function muggleOrNot() {
+    var text;
+    var types = document.getElementById("myInput").value;
+    
+    switch(types){
+        case "muggle":
+            text="Welcome muggle, enjoy some gifs.";
+        break;
+        case "wizard":
+            text="Welcome fellow wizard.Enjoy some wizard photos.";
+        break;
+        case "witch":
+            text="Welcome fellow witch.Enjoy some wizard photos.";   
+    }
+    document.getElementById("demo").innerHTML = text;
+};
+</script>
