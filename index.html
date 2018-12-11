@@ -5,8 +5,6 @@
     
 <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
- 
-
 Hello Camper!
 
 For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
@@ -30,6 +28,7 @@ For now, the test suite only works in Chrome! Please read the README below in th
       <a href="harryPotter.html">Harry Potter Cards</a></li>
   </ul>
 </nav>
+<body>
 <section id="welcome-section">
   <h1>Natalie Zollinger</h1>
   <p>Web Development Portfolio</p>
@@ -56,12 +55,12 @@ For now, the test suite only works in Chrome! Please read the README below in th
   </div>
 </section>
 <section id="API">
-    <figure class="theForce">
-        <img class="starWars" src="the%20force%20awakens.png" alt="The Force Awakens, Rey and BB8">
+    <figure>
+        <img class="starWars" src="/starWarsPics/the%20force%20awakens.png" alt="The Force Awakens, Rey and BB8">
         <figcaption class="SW">Star Wars API<p id="openingCrawl"></p>
             <fieldset>
-                <img src="explosion2.0.gif" alt="The Force Awakens explosion gif">
-                <img src="r2d2.gif" alt="R2D2 gif">
+                <img src="/starWarsPics/explosion2.0.gif" alt="The Force Awakens explosion gif">
+                <img src="/starWarsPics/r2d2.gif" alt="R2D2 gif">
                 <h3>Star Wars Films</h3>
                 <a href="https://www.starwars.com/films" target="_blank"><ul id="film-list"></ul></a>
             </fieldset>
@@ -78,9 +77,11 @@ For now, the test suite only works in Chrome! Please read the README below in th
   </ul>
 </div>
 <footer>
-    <p>&copy; &bull; 2018 &bull; This is an almost empty portfolio, it will be filled later</p>
+    <p>&copy; &bull; 2018 &bull; This is a student portfolio.</p>
   </footer>
-<script type="module" src="portfolio.js"></script>
+    
+<script type="module" src="starwars.js"></script>
+</body>
 </html>
 
 <style>
@@ -134,11 +135,8 @@ p {
     font-family: Courier New;
 }
 .starWars{
-    margin-right: 400px;
-    margin-left: 400px;
-}
-figure.theForce {
-    border: 2px solid black;
+    display: block;
+    margin: auto;
 }
 .SW {
     font-family: Courier New;
@@ -146,6 +144,8 @@ figure.theForce {
 }
 #openingCrawl{
     border: 2px solid black;
+    border-radius: 1rem;
+    margin: 10px 200px 10px 200px;
 }
 #film-list {
     padding-bottom: 10px;
@@ -154,7 +154,7 @@ figure.theForce {
 #film-list li {
     border: solid grey 2px;
     border-radius: 1rem;
-    margin: 10px 600px 10px 600px;
+    margin: 10px 300px 10px 300px;
 }
 #film-list li:hover {
     background:#80deea;

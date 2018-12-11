@@ -7,7 +7,7 @@ const pokeContainer = document.querySelector('#container')
 const cardCreator = (poke) => {
     let card = document.createElement('div')
     card.className = 'card'
-    card.addEventListener('click', function(){
+    card.addEventListener('click', () => {
         card.classList.toggle('is-flipped');
     })
     let frontFig = document.createElement('figure')
@@ -50,6 +50,10 @@ const cardCreator = (poke) => {
     spDef.textContent = `Special Defense:${poke.base["Sp.Def"]}`
     console.log(`Special Defense:${poke.base["Sp.Def"]}`)
     
+    let type = document.createElement('p')
+    type.textContent = `Type:${poke.type}`
+    console.log(`Type:${poke.type}`)
+    
     //backFig.appendChild(imag)
     backFig.appendChild(capt)
     backFig.appendChild(attack)
@@ -57,7 +61,7 @@ const cardCreator = (poke) => {
     backFig.appendChild(hp)
     backFig.appendChild(spAtk)
     backFig.appendChild(spDef)
-    
+    backFig.appendChild(type)
     
     card.appendChild(frontFig)
     card.appendChild(backFig)
@@ -80,9 +84,12 @@ let newPokemon = new Pokemon("Sandshrew", "\u30b5\u30f3\u30c9",'027', {"Attack":
 let newPokemon2 = new Pokemon("Rapidash","\u30ae\u30e3\u30ed\u30c3\u30d7", '078',{"Attack": 100, "Defense":70, "HP":65, "Sp.Atk":80, "Sp.Def":80});
 
 let createCard = document.querySelector('#createCard') 
-createCard.addEventListener('click', function(){
+createCard.addEventListener('click', () => {
     cardCreator(newPokemon)
 });
-createCard.addEventListener('click', function(){
+createCard.addEventListener('click', () => {
     cardCreator(newPokemon2)
 });
+
+
+

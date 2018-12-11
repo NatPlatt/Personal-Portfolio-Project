@@ -16,10 +16,22 @@
     <li>
         <a href="cards.html">Pokemon Cards</a></li>
     <li class="active">
-      <a href="harryPotter.html">Harry Potter Cards</a></li>
+      <a href="harryPotter.html">Harry Potter API</a></li>
   </ul>
 </nav>
-    <h3>--Harry Potter Cards - coming soon--</h3>
+<body>
+    
+    
+    <h3>Harry Potter API</h3>
+    
+    <figure class="crest"><img src="hpPics/Hogwarts_Crest_Transparent.png" width="100px" height="100px" alt="Hogwarts Crest"></figure>
+    <h4>Characters and Ancestries</h4>
+    
+    <ul id="hpFilter"></ul>
+    
+    <figure class="sign"><img src="hpPics/deathlyHallows.jpg" height="150" width="150" alt="Deathly Hallows"></figure>
+    <figure class="sign"><img src="hpPics/marauders2.gif" width="400" height="400" alt="Marauders"></figure>
+    
     <h4>Write muggle, wizard or witch in the input field and click the button.</h4>
     <div class="muggleFunc">
         <label>
@@ -30,48 +42,95 @@
     <div>
         <p id="demo"></p>
     </div>
+    <figure class="snitch"><img src="/hpPics/harrypottergif.gif" width="505" height="295"alt="Harry Potter with snitch"></figure>
     <div class="gifs">
-        <figure class="pumpkin"><img src="halloween-at-hogwarts.gif" alt="Halloween at Hogwarts"></figure>
-        <figure><img src="harrypottergif.gif" alt="Harry Potter with snitch"></figure>
-        <figure><img src="dumbledore.gif" alt="Dumbledore"></figure>
-        <figure><img src="staircase.gif" width="505" height="205" alt="Hogwarts Staircases"></figure>
-        <figure><img src="hogwarts_express.gif" alt="Hogwarts Express"></figure>
-        <figure><img src="hogwarts_in_snow.gif" alt="Hogwarts in the snow"></figure>
-        <figure><img src="niffler.gif" alt="Niffler"></figure>
-        <figure><img src="pick.gif" alt="Pick the Bowtruckle"></figure>
-        <figure><img src="thestral.gif" alt="Thestral"></figure>
-        <figure><img src="hogwarts_express2.gif" alt="Hogwarts Express"></figure>
-        <figure><img src="lumos.gif" alt="Lumos"></figure>
-        <figure><img src="crookshanks.gif" alt="Crookshanks"></figure>
-        <figure><img src="ghost.gif" alt="The Fat Friar ghost"></figure>
+        <figure><img src="/hpPics/jack-o-lantern.gif" alt="Halloween at Hogwarts"></figure>
+        <figure><img src="/hpPics/elderwand.gif" height="205" width="505"alt="Harry with the Elder Wand"></figure>
+        <figure><img src="/hpPics/staircase.gif" width="505" height="205" alt="Hogwarts Staircases"></figure>
+        <figure><img src="/hpPics/hogwarts_in_snow.gif" height="205" width="505"alt="Hogwarts in the snow"></figure>
+        <figure><img src="/hpPics/battle.gif" height="205" width="505"alt="Battle at Hogwarts"></figure>
+        <figure><img src="/hpPics/patronus.gif" height="205" width="505"alt="Snapes Patronus"></figure>
+        <figure><img src="/hpPics/Hogwarts-Christmas-3.gif" height="205" width="505"alt="Hogwarts at Christmas"></figure>
+        <figure><img src="/hpPics/lumos.gif" height="205" width="505"alt="Lumos"></figure>
+        <figure><img src="/hpPics/dumbledoreClap.gif" height="205" width="505"alt="Dumbledore clapping"></figure>
+        <figure><img src="/hpPics/durmstrang.gif" height="205" width="505"alt="Durmstrang fire breather"></figure>
+        <figure><img src="/hpPics/quill.gif" height="205" width="505"alt="Quill writing"></figure>
+        <figure><img src="/hpPics/divinations.gif" alt="Harry and Ron in Divination Class"></figure>
         
-        <figure><img src="hagrids%20hut.gif" alt="Hagrids Hut"></figure> 
+        <figure class="mischief"><img src="hpPics/marauders3.gif" width="500" height="100"alt="Mischief Managed"></figure>
     </div>
-<!--<script type="module" src="HPcode.js"></script>-->
+    
+<footer>
+    <p>&copy; &bull; 2018 &bull; This is a student portfolio.</p>
+</footer>
+<script type="module" src="HPcode.js"></script>
+
+</body>
 </html>
 
 
 <style>
+   
+    body{
+        
+        background-color: white;
+    }
+   
+    figure.sign {
+        display: flex;
+        justify-content: center;
+    }
+    figure.crest {
+        display: flex;
+        justify-content: center;
+    }
     h3 {
         padding-top: 150px;
         font-family: Courier New;
-        font-size: 25px;
+        font-size: 40px;
         text-align: center;
-        padding-left: 25px;
     }
     h4 {
         font-family: Courier New;
         text-align: center;
+        font-size: 25px;
+    }
+    ul#hpFilter {
+        padding-bottom: 10px;
+        list-style: none; 
+    }
+    ul#hpFilter li{
+        border: solid black 2px;
+        border-radius: 1rem;
+        margin: 10px 300px 10px 300px;
+        padding: 5px;
+        text-align: center;
+        font-family: 'Metamorphous',cursive;
     }
     div.muggleFunc {
-        position:relative;
-        left: 45%; 
-        margin: 10px;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        
+    }
+    div.muggleFunc label input#myInput{
+        border-radius: 1rem;
+    }
+    div.muggleFunc label button {
+        border-radius: 1rem;
+        font-family: 'Metamorphous',cursive;
+        padding: 5px;
+        font-size: 15px;
     }
     p#demo {
         font-family: 'Metamorphous', cursive;
         text-align: center;
         padding-left: 25px;
+        padding-bottom: 500px;
+    }
+    figure.snitch {
+        display: flex;
+        justify-content: center;
     }
     div.gifs {
         margin: 20px;
@@ -79,31 +138,53 @@
         justify-content: center;
         flex-wrap: wrap;
         float: left;
+        margin-bottom: 60px;
     }
     figure {
-        margin: 5px;
-        margin-right: 5px;
-        
+        margin:10px;
     }
-    /*figure.pumpkin {
-        margin-left: 38px;
-    }*/
+    figure.mischief {
+        margin-top: 70vh;
+        margin-bottom: 30vh;
+    }
+    footer {
+        padding: 15px;
+    }
+    footer p{
+        font-family: Courier New;
+        text-align: center;
+    }
 </style>
 
 <script>
+
+    
 function muggleOrNot() {
     var text;
     var types = document.getElementById("myInput").value;
-    
+   
     switch(types){
         case "muggle":
-            text="Welcome muggle, enjoy some gifs.";
+            text="Welcome muggle, scroll down to enjoy some gifs from the fictional Harry Potter series.";
+        break;
+        case "Muggle":
+            text="Welcome muggle, scroll down to enjoy some gifs from the fictional Harry Potter series.";
+        break;
+        case "Wizard":
+            text="Welcome fellow wizard. Scroll down to enjoy some photos from our history.";
         break;
         case "wizard":
-            text="Welcome fellow wizard.Enjoy some wizard photos.";
+            text="Welcome fellow wizard.Scroll down to enjoy some photos from our history.";
         break;
         case "witch":
-            text="Welcome fellow witch.Enjoy some wizard photos.";   
+            text="Welcome fellow witch.Scroll down to enjoy some photos from our history.";
+        break;
+        case "Witch":
+            text="Welcome fellow witch. Scroll down to enjoy some photos from our history.";
+        break;
+        default:
+            text="That was not one of the options, you must be a Death Eater! Aurors have been sent to your location."
+        
     }
     document.getElementById("demo").innerHTML = text;
 };
